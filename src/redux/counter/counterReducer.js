@@ -1,18 +1,19 @@
 import { createStore } from "redux";
+import { DECREMENT, INCREMENT } from "./actionType";
+import { initialState } from "./initialState";
 
 
-// initial state
-let initialState = 0;
+
 
 
 // create counter reducer
 const counterReducer = (state = initialState, { type, payload }) => {
 
     switch (type) {
-        case 'INCREMENT':
+        case INCREMENT:
             return state + 1;
             break;
-        case 'DECREMENT':
+        case DECREMENT:
             return state - 1;
             break;
 

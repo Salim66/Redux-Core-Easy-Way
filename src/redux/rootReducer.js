@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import colorsReducer from "./color/colorsReducer";
-import counterReducer from "./counterReducer";
-import foodReducer from "./foodReducer";
+import counterReducer from "./counter/counterReducer";
+import foodReducer from "./food/foodReducer";
 
 
 // create conbine reducer

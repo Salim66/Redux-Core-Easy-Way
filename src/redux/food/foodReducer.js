@@ -1,14 +1,13 @@
+import { FOOD_CHANGE } from "./actionType";
+import { initalState } from "./initialState";
 
-
-// initial state
-let initalState = 'Alo';
 
 
 // create food reducer
 const foodReducer = (state = initalState, { type, payload }) => {
 
     switch (type) {
-        case "FOOD_CHANGE":
+        case FOOD_CHANGE:
             return payload
             
     
