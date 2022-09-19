@@ -22,5 +22,5 @@ const counterReducer = (state = initialState, { type, payload }) => {
 
 }
 
-// create redux store
-export const store = createStore(counterReducer);
+// export default
+export default counterReducer;
