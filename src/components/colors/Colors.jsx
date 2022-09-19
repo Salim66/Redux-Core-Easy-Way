@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { makeBLUE, makeGRAY, makeGREEN, makeRED, makeYELLOW } from '../../redux/color/action';
 
 const Colors = () => {
 
@@ -13,11 +14,11 @@ const Colors = () => {
             <div className="col-md-5">
                 <div className="card counter shadow-sm">
                     <div className="card-body">
-                       <button onClick={() => dispatch({ type: "RED" })}>Red</button>
-                       <button onClick={() => dispatch({ type: "GREEN" })}>Green</button>
-                       <button onClick={() => dispatch({ type: "YELLOW" })}>Yellow</button>
-                       <button onClick={() => dispatch({ type: "BLUE" })}>Blue</button>
-                       <button onClick={() => dispatch({ type: "GRAY" })}>Gray</button>
+                       <button onClick={() => dispatch(makeRED())}>Red</button>
+                       <button onClick={() => dispatch(makeGREEN())}>Green</button>
+                       <button onClick={() => dispatch(makeYELLOW())}>Yellow</button>
+                       <button onClick={() => dispatch(makeBLUE())}>Blue</button>
+                       <button onClick={() => dispatch(makeGRAY())}>Gray</button>
                     </div>
 
                     <h1>{ foods }</h1>

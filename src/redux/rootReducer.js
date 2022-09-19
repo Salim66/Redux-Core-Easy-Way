@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import colorsReducer from "./colorsReducer";
+import colorsReducer from "./color/colorsReducer";
 import counterReducer from "./counterReducer";
 import foodReducer from "./foodReducer";
 
